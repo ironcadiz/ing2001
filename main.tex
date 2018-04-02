@@ -43,16 +43,21 @@
 %% Math
 \usepackage{amsmath}
 
-%%Images
+%% Images
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \graphicspath{{graphics/}{images/}}
 \usepackage{float}
 
-% Figure numbering
+%% Figure numbering
 \usepackage{chngcntr}
 \counterwithin{figure}{section}
 
 
+%% Avoid Hyphens. Comment this code if you want to keep them.
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
 
 % Document text
 % =============
